@@ -1,0 +1,86 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}	
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 40px;
+}
+
+.section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri a {
+    flex: 1;
+    border-radius: 1rem;
+    display: block;
+    overflow: hidden;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kodfun-galeri a:hover {
+    flex: 5;
+}
+
+.kodfun-galeri a div {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}

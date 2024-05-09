@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Bebas Neue", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('titulo_imagen.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        section {
+            padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project-description {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .project-description img {
+            max-width: 200px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis Proyectos</h1>
+    </header>
+    <section>
+        <div class="project-description">
+            <div>
+                <h2>Ciudad reactiva inteligente</h2>
+                <p>Sistema que se comportanba por medio de dos partes:</p>
+                <p>Aplicación creada para el DIF de Atizapan para mejorar el funcionamiento de comedores comunitarios. Utilizamos un sistema completo de página web, aplicación movil y base de datos por medio de servicios de AWS.</p>
+
+                <li>Un sistema multiagente que controlaba toda la logica del projecto (movimeintos de los carros direcciones, calles, etc.). Crado con: Python (Mesa).</li>
+                <li>Un sistema de visualización de con Unity que crea los objetos en 3D del modelo de Python. Creado con: Unity.</li>
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="https://github.com/pepe44cem/pepe44cem.github.io/tree/main/Creaci%C3%B3n%20de%20visualizador%20de%20acertijos" class="button">Github</a>
+    </section>
+    <section>
+        <div class="video-container">
+            <!-- Reemplaza "VIDEO_ID" con el ID de tu video de YouTube -->
+            <iframe src="https://www.youtube.com/embed/DLZhbry6h-4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+</html>
