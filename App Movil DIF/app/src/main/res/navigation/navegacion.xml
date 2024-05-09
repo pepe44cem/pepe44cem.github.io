@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/logInFrag">
+
+    <fragment
+        android:id="@+id/logInFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.LogInFrag"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFrag_to_menuFrag"
+            app:destination="@id/menuFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.MenuFrag"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFrag_to_registroComidaFrag"
+            app:destination="@id/registroComidaFrag" />
+        <action
+            android:id="@+id/action_menuFrag_to_menuReporteFrag"
+            app:destination="@id/menuReporteFrag" />
+        <action
+            android:id="@+id/action_menuFrag_to_registroEmpleadoFrag"
+            app:destination="@id/registroEmpleadoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroComidaFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroComidaFrag"
+        android:label="fragment_registro_comida"
+        tools:layout="@layout/fragment_registro_comida" >
+        <action
+            android:id="@+id/action_registroComidaFrag_to_lecturaQRFrag"
+            app:destination="@id/lecturaQRFrag" />
+        <action
+            android:id="@+id/action_registroComidaFrag_to_registroComidaExitosoFrag"
+            app:destination="@id/registroComidaExitosoFrag" />
+        <action
+            android:id="@+id/action_registroComidaFrag_to_registroPersonaFrag"
+            app:destination="@id/registroPersonaFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturaQRFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.LecturaQRFrag"
+        android:label="fragment_lectura_qr"
+        tools:layout="@layout/fragment_lectura_qr" >
+        <action
+            android:id="@+id/action_lecturaQRFrag_to_registroComidaExitosoFrag"
+            app:destination="@id/registroComidaExitosoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroComidaExitosoFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroComidaExitosoFrag"
+        android:label="fragment_registro_comida_exitoso"
+        tools:layout="@layout/fragment_registro_comida_exitoso" >
+        <action
+            android:id="@+id/action_registroComidaExitosoFrag_to_registroComidaFrag"
+            app:destination="@id/registroComidaFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroPersonaFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroPersonaFrag"
+        android:label="fragment_registro_persona"
+        tools:layout="@layout/fragment_registro_persona" >
+        <action
+            android:id="@+id/action_registroPersonaFrag_to_registroPersonaExitosoFrag"
+            app:destination="@id/registroPersonaExitosoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroPersonaExitosoFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroPersonaExitosoFrag"
+        android:label="fragment_registro_persona_exitoso"
+        tools:layout="@layout/fragment_registro_persona_exitoso" >
+        <action
+            android:id="@+id/action_registroPersonaExitosoFrag_to_registroComidaExitosoFrag"
+            app:destination="@id/registroComidaExitosoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/reporteFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.ReporteFrag"
+        android:label="fragment_reporte"
+        tools:layout="@layout/fragment_reporte" />
+    <fragment
+        android:id="@+id/menuReporteFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.MenuReporteFrag"
+        android:label="fragment_menu_reporte"
+        tools:layout="@layout/fragment_menu_reporte" >
+        <action
+            android:id="@+id/action_menuReporteFrag_to_registroDiarioFrag"
+            app:destination="@id/registroDiarioFrag" />
+        <action
+            android:id="@+id/action_menuReporteFrag_to_reporteFrag"
+            app:destination="@id/reporteFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroDiarioFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroDiarioFrag"
+        android:label="fragment_registro_diario"
+        tools:layout="@layout/fragment_registro_diario" />
+    <fragment
+        android:id="@+id/registroEmpleadoFrag"
+        android:name="mx.itesm.aplicacion_comedor.view.RegistroEmpleadoFrag"
+        android:label="fragment_registro_empleado"
+        tools:layout="@layout/fragment_registro_empleado" />
+</navigation>
