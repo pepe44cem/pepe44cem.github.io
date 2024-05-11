@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-image: url('titulo_imagen.jpg');
             background-size: cover;
@@ -19,9 +21,11 @@
             text-align: center;
             padding: 50px 0;
         }
+
         section {
             padding: 20px;
         }
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -29,6 +33,7 @@
             height: 0;
             overflow: hidden;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -36,6 +41,7 @@
             width: 100%;
             height: 100%;
         }
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -44,17 +50,20 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
         .project-description {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
         .project-description img {
             max-width: 200px;
             border-radius: 5px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Mis Proyectos</h1>
@@ -62,11 +71,15 @@
     <section>
         <div class="project-description">
             <div>
-                <h2>Ciudad reactiva inteligente</h2>
-                <p>Aplicación creada para el DIF de Atizapan para mejorar el funcionamiento de comedores comunitarios. Utilizamos un sistema completo de: </p>
-                <li>Página web</li>
-                <li>Aplicación movil</li>
-                <li>Base de datos por medio de servicios de AWS</li>                
+                <h2>App Movil DIF</h2>
+                <p>Esta aplicación fue creada para el DIF de Atizapán con el propósito de mejorar el funcionamiento de
+                    comedores comunitarios. Hemos implementado un sistema completo que incluye:</p>
+                <ul>
+                    <li>Página web.</li>
+                    <li>Aplicación móvil.</li>
+                    <li>Base de datos utilizando servicios de AWS.</li>
+                </ul>
+
             </div>
         </div>
     </section>
@@ -75,9 +88,9 @@
     </section>
     <section>
         <div class="video-container">
-            <!-- Reemplaza "VIDEO_ID" con el ID de tu video de YouTube -->
             <iframe src="https://www.youtube.com/embed/rYIO1WYDdys" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 </body>
+
 </html>
